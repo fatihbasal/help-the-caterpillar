@@ -1,10 +1,14 @@
 /* Hallmark · shape: Stage hero over a Switcher, a Figures field and a Long Document (swapped from Map / Diagram: half the page is a legal text) · genre: playful · theme: Hum (deal 1/3, seed homepage-privacy-policy-gentle-db0c·c401e390·2026-11-04·r0) · job: try · draw: 22eeab
  * hero: Stage · nav: floating pill · footer: index columns · imagery: screenshots 6 per language (the game's own captures) · signature: the real maze screen, Pip mid-path, laid on torn garden paper
  * axes: light/rounded-sans/chromatic-yellow · posture: full-palette · contrast: pass · fold: pass · copy: verbatim · v2.0.0 */
+/* Hallmark · display: Fredoka in place of Chillax, self-hosted under the SIL OFL with Turkish letters added, so the page loads nothing from another site */
 /* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V4 · weakest: P, a privacy page has little to argue; it argues that a children's game can say exactly what it does with data, and shows the game before the policy */
 /* Hallmark · copy: verbatim covers the privacy policy, a legal text the owner keeps word for word (two en dashes became commas, nothing else) */
 @import url("./tokens.css");
 @import url("./base.css");
+
+@font-face { font-family: "Fredoka"; src: url("./fonts/fredoka-500.woff") format("woff"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Fredoka"; src: url("./fonts/fredoka-600.woff") format("woff"); font-weight: 600; font-style: normal; font-display: swap; }
 
 :root {
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .12 0 0 0 0 .12 0 0 0 0 .16 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
@@ -44,7 +48,7 @@ mark { background: color-mix(in oklab, var(--color-accent) 55%, transparent); co
 
 /* ---- hero: Stage ---- */
 .hero { position: relative; min-height: calc(100dvh - var(--nav-h) - 2 * var(--space-sm)); display: grid; align-items: center; padding-block: var(--space-lg) var(--space-3xl); }
-.hero__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: var(--space-2xl); align-items: center; }
+.hero__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: var(--space-2xl); align-items: center; }
 .hero h1 { font-size: var(--text-display); max-width: 11ch; }
 .hero .lead { margin-top: var(--space-lg); color: var(--color-ink-2); max-width: 30ch; }
 .hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-lg); margin-top: var(--space-xl); }
